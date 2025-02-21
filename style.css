@@ -132,12 +132,6 @@ h2 {
 
 }
 
-@media screen { max-width: 420px;
-    #testimonial {
-        padding: 30px;
-    }
-    
-}
 
 .Noel {
     display: flex;
