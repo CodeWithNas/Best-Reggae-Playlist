@@ -23,7 +23,7 @@
 
    <main class="content">
       <section class="hero">
-         <div class="left-section">
+         <div class="left-section slide-in-left">
              <h1>Welcome To <br>CholoRoots</h1>
              <p class="paragraph">Feel the rhythm, embrace the culture, and vibe to the smoothest reggae sounds with <strong>CholoRoots</strong> - the best reggae playlist you'll ever experience!</p>
              <p class="paragraph">From the deep roots of classic reggae legends to the freshest modern beats, <strong>CholoRoots</strong> delivers the perfect soundtrack for relaxation, celebration, and everything in between.</p>
@@ -31,33 +31,33 @@
                  <a href="https://open.spotify.com/playlist/6SjDQNa8eutZa2EFKVE5Sy?si=qRGeB7JQRufjdm2CQPF9Q&pi=gr6o-q_5PQumzx" target="_blank" rel="noopener">Play Me</a>
              </button>
          </div>
-         <div class="right-section">
+         <div class="right-section slide-in-right">
              <img src="./Images/Hero.jpg" alt="Reggae festival celebration with vibrant colors and music">
          </div>
       </section>
 
-      <section id="about">
+      <section id="about" class="fade-in">
          <h2>Why You'll Love CholoRoots</h2>
          <div class="cards">
-             <article class="card">
+             <article class="card scale-in">
                  <div class="image">
                      <img src="./Images/Reggae Lovers.jpg" alt="Rastaman holding a guitar with passion">
                  </div>
                  <p class="description">Curated with passion by reggae lovers, for reggae lovers</p>
              </article>
-             <article class="card">
+             <article class="card scale-in">
                  <div class="image">
                      <img src="./Images/Hottest Mix.jpg" alt="Rastaman in traditional reggae culture">
                  </div>
                  <p class="description">A mix of timeless classics & the hottest new tunes</p>
              </article>
-             <article class="card">
+             <article class="card scale-in">
                  <div class="image">
                      <img src="./Images/Roots.jpg" alt="Photo of reggae legend and music icon">
                  </div>
                  <p class="description">The perfect blend of roots, dancehall, lovers rock & conscious reggae</p>
              </article>
-             <article class="card">
+             <article class="card scale-in">
                  <div class="image">
                      <img src="./Images/Updated.jpg" alt="Guitar representing fresh reggae music">
                  </div>
@@ -66,14 +66,45 @@
          </div>
       </section>
 
-      <section id="testimonial">
+      <section class="playlist-preview fade-in">
+         <h3>Featured Tracks</h3>
+         <p>Get a taste of the CholoRoots experience with these handpicked tracks that represent the perfect blend of classic and contemporary reggae vibes.</p>
+         <div class="featured-tracks">
+             <div class="track-item">
+                 <h4>Three Little Birds</h4>
+                 <p>Bob Marley & The Wailers</p>
+                 <button class="play-button">▶ Play</button>
+             </div>
+             <div class="track-item">
+                 <h4>Is This Love</h4>
+                 <p>Bob Marley & The Wailers</p>
+                 <button class="play-button">▶ Play</button>
+             </div>
+             <div class="track-item">
+                 <h4>Redemption Song</h4>
+                 <p>Bob Marley & The Wailers</p>
+                 <button class="play-button">▶ Play</button>
+             </div>
+         </div>
+      </section>
+
+      <section id="testimonial" class="fade-in">
          <blockquote class="testimonial">
              "CholoRoots brings me peace and positivity every day. The vibes are unmatched! Whether I'm unwinding after a long day or looking for motivation, this playlist always sets the perfect mood. The selection is pure magic, blending classic reggae with fresh, uplifting tunes that keep my spirit high."
              <cite class="Noel">Noel, devoted listener</cite>
          </blockquote>
       </section>
 
-      <section class="call-to-action">
+      <section class="newsletter fade-in">
+         <h3>Stay Updated with the Latest Vibes</h3>
+         <p>Subscribe to our newsletter and be the first to know about new tracks, exclusive content, and reggae culture updates.</p>
+         <form class="newsletter-form">
+             <input type="email" placeholder="Enter your email address" required>
+             <button type="submit">Subscribe</button>
+         </form>
+      </section>
+
+      <section class="call-to-action fade-in">
          <div>
              <strong>Feel the Irie Vibes Now!</strong><br>
              Hit play and let the music transport you to a world of positivity, love and unity.
@@ -87,8 +118,110 @@
    </main>
 
    <footer class="footer">
-       <p>&copy; 2024 CholoRoots. All rights reserved.</p>
+       <div class="footer-content">
+           <div class="footer-section">
+               <h4>About CholoRoots</h4>
+               <p>Your ultimate destination for the finest reggae music, carefully curated to bring you the perfect blend of classic roots, dancehall, lovers rock, and conscious reggae.</p>
+           </div>
+           <div class="footer-section">
+               <h4>Connect With Us</h4>
+               <p>Follow us on social media for the latest updates, new tracks, and reggae culture content.</p>
+               <div class="social-links">
+                   <a href="#" title="Facebook">📘</a>
+                   <a href="#" title="Instagram">📷</a>
+                   <a href="#" title="Twitter">🐦</a>
+                   <a href="#" title="YouTube">📺</a>
+               </div>
+           </div>
+           <div class="footer-section">
+               <h4>Quick Links</h4>
+               <p><a href="#about" style="color: #ff6b35; text-decoration: none;">About</a></p>
+               <p><a href="#testimonial" style="color: #ff6b35; text-decoration: none;">Reviews</a></p>
+               <p><a href="https://open.spotify.com/playlist/6SjDQNa8eutZa2EFKVE5Sy?si=qRGeB7JQRufjdm2CQPF9Q&pi=gr6o-q_5PQumzx" target="_blank" rel="noopener" style="color: #ff6b35; text-decoration: none;">Playlist</a></p>
+           </div>
+       </div>
+       <div class="footer-bottom">
+           <p>&copy; 2024 CholoRoots. All rights reserved.</p>
+       </div>
    </footer>
+
+   <button class="back-to-top" title="Back to Top">↑</button>
+
+   <script>
+       // Image loading animation
+       document.addEventListener('DOMContentLoaded', function() {
+           const images = document.querySelectorAll('.image img');
+           
+           images.forEach(img => {
+               img.addEventListener('load', function() {
+                   this.classList.add('loaded');
+               });
+               
+               // If image is already loaded
+               if (img.complete) {
+                   img.classList.add('loaded');
+               }
+           });
+       });
+
+       // Scroll-triggered animations
+       const observerOptions = {
+           threshold: 0.1,
+           rootMargin: '0px 0px -50px 0px'
+       };
+
+       const observer = new IntersectionObserver(function(entries) {
+           entries.forEach(entry => {
+               if (entry.isIntersecting) {
+                   entry.target.classList.add('visible');
+               }
+           });
+       }, observerOptions);
+
+       // Observe all animated elements
+       document.addEventListener('DOMContentLoaded', function() {
+           const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in');
+           animatedElements.forEach(el => observer.observe(el));
+       });
+
+       // Back to Top button
+       const backToTopButton = document.querySelector('.back-to-top');
+       
+       window.addEventListener('scroll', function() {
+           if (window.pageYOffset > 300) {
+               backToTopButton.classList.add('visible');
+           } else {
+               backToTopButton.classList.remove('visible');
+           }
+       });
+
+       backToTopButton.addEventListener('click', function() {
+           window.scrollTo({
+               top: 0,
+               behavior: 'smooth'
+           });
+       });
+
+       // Newsletter form submission
+       const newsletterForm = document.querySelector('.newsletter-form');
+       if (newsletterForm) {
+           newsletterForm.addEventListener('submit', function(e) {
+               e.preventDefault();
+               const email = this.querySelector('input[type="email"]').value;
+               alert('Thank you for subscribing! You\'ll receive updates about the latest reggae vibes.');
+               this.reset();
+           });
+       }
+
+       // Featured tracks play buttons
+       const playButtons = document.querySelectorAll('.play-button');
+       playButtons.forEach(button => {
+           button.addEventListener('click', function() {
+               // Redirect to Spotify playlist
+               window.open('https://open.spotify.com/playlist/6SjDQNa8eutZa2EFKVE5Sy?si=qRGeB7JQRufjdm2CQPF9Q&pi=gr6o-q_5PQumzx', '_blank');
+           });
+       });
+   </script>
     
 </body>
 </html>
