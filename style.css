@@ -601,13 +601,24 @@ body {
 
 @media (max-width: 768px) {
     .header {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         gap: 1rem;
         padding: 1rem 2rem;
     }
     
+    .logo img {
+        height: 50px;
+    }
+    
     .menus {
-        gap: 1rem;
+        gap: 0.8rem;
+    }
+    
+    .menus a {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
     }
     
     .hero {
@@ -668,6 +679,19 @@ body {
         padding: 1rem;
     }
     
+    .logo img {
+        height: 45px;
+    }
+    
+    .menus {
+        gap: 0.5rem;
+    }
+    
+    .menus a {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+    }
+    
     .content {
         padding: 0 1rem;
     }
@@ -678,11 +702,6 @@ body {
     
     .paragraph {
         font-size: 1rem;
-    }
-    
-    .menus a {
-        font-size: 0.9rem;
-        padding: 0.4rem 0.8rem;
     }
     
     .cards {
